@@ -284,7 +284,6 @@ border-radius: 0.5rem;
   border-radius: 0.5rem;
   background-color: #f7fcf9a5;
   
-  
 }
 
 .carrusel{
@@ -313,10 +312,7 @@ border-radius: 0.5rem;
 .carrusel img{
   width: calc(100% / 2 - 2rem);
   min-height: 5vh;
-  /* border: black solid 1px; */
-  /* margin: 5px; */
-  
-  
+   
 }
 
 .carrusel .puntos {
