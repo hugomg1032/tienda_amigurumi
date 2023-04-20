@@ -157,7 +157,7 @@ header {
   z-index: 1000;
 }
 
-.cuadro-busqueda.active{
+.cuadro-busqueda.activo{
   display: flex;
   top: 80px;
   transition:var(--transicion-suave);
@@ -180,7 +180,7 @@ header {
   
 }
 
-.carrito-vista.active{
+.carrito-vista.activo{
   display: flex;
   top: 80px;
   transition:var(--transicion-suave);
@@ -203,7 +203,7 @@ header {
   z-index: 1000;
 }
 
-.ingreso.active{
+.ingreso.activo{
   display: flex;
   top: 80px;
   transition: var(--transicion-suave)
@@ -342,35 +342,6 @@ border-radius: 0.5rem;
 }
 
 
-
-
-
-
-
-/* .carrusel{
-  display: flex;
-  position: relative;
-  width: 87%;
-  height: 400px;
-  margin: 10px auto;
-  overflow: hidden;
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
-  border-radius: 0.5rem;
-}
-
-.slider{
-  flex: 0 0 100%;
-  width: 100%;
-  object-fit: cover;
-  scroll-snap-align: center;
-
-} */
-
-
-
-
-
 /* ----------------------------------------- */
 /*------------ clase para botones ----------*/
 /* ----------------------------------------- */
@@ -399,7 +370,7 @@ border-radius: 0.5rem;
   transition: 0.2s;
 }
 
-.btn:active{
+.btn:activo{
   color:#d000eb;
   background: wheat;
   transition: 0.2s;

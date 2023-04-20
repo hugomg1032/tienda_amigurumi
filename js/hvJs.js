@@ -6,15 +6,15 @@ let iconoBuscar= document.querySelector('#buscar-icono'),
     punto = document.querySelectorAll('.punto');
 
 
-function fnAdclassActive(elmt1,elmt2){
+function fnAdclassactivo(elmt1,elmt2){
     elmt1.addEventListener('click',()=>{
         let elmt= document.querySelector(elmt2);
-        elmt.classList.toggle('active')});
+        elmt.classList.toggle('activo')});
 }
 
-fnAdclassActive(usuarioIcono,'.ingreso');
-fnAdclassActive(iconoBuscar,'.cuadro-busqueda')
-fnAdclassActive(iconoCarrito,'.carrito-vista')
+fnAdclassactivo(usuarioIcono,'.ingreso');
+fnAdclassactivo(iconoBuscar,'.cuadro-busqueda')
+fnAdclassactivo(iconoCarrito,'.carrito-vista')
 
 
 punto.forEach((puntos, i)=> {
