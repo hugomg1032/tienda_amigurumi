@@ -286,6 +286,10 @@ border-radius: 0.5rem;
   
 }
 
+.bordes {
+  border: #02171d solid 1px;
+}
+
 .carrusel{
   width: 70%;
   margin: 10px auto;
