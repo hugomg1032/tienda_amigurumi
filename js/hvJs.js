@@ -23,12 +23,11 @@ punto.forEach((puntos, i)=> {
         let ubicacion = i
         let calculo = ubicacion * -50
 
-        carrusel.style.transform = `translateX(${ calculo }%)`
-
+        carrusel.style.transform = `translateX(${ calculo }%)`;
         punto.forEach((puntos, i )=> {
-            punto[i].classList.remove('activo')
+            punto[i].classList.toggle('activo')
         })
-
+        
         punto[i].classList.add('activo')
 
     })
