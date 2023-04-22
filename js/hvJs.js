@@ -2,7 +2,7 @@
 let iconoBuscar= document.querySelector('#buscar-icono'), 
     iconoCarrito= document.querySelector('#carrito-icono'), 
     usuarioIcono= document.querySelector('#usuario-icono'), 
-    carrusel = document.querySelector('.imagenes'),
+    carrusel = document.querySelector('.carrusel_imagenes'),
     punto = document.querySelectorAll('.punto');
 
 
