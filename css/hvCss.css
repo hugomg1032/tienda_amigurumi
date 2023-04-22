@@ -334,17 +334,16 @@ outline: none;
   cursor: pointer;
 }
 .punto {
-  width: 16px;
-  height: 16px;
+  width: 30px;
+  height: 10px;
   margin: 0 10px;
-  border-radius: 50px;
-  
-  ;
-  /* padding: 1rem; */
+  border-radius: 5px;
+  background-color:#e19bea70;
+    
 }
 
 .punto.activo {
-  background-color: orange;
+  background-color: #cd934e;
 }
 
 
