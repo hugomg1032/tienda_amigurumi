@@ -1,5 +1,3 @@
-  @import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 *{ 
     /* font-family:'Schibsted Grotesk', sans-serif; */
@@ -51,20 +49,28 @@ html::-webkit-scrollbar-track {
   border: #02171d solid 1px;
 } */
 
+*{
+  /* border: #02171d solid 1px; */
+  border-radius: 0.5rem;
+
+}
+
+
 
 header {
-  position: relative;
+  position: fixed;
   display: flex;
-  /* overflow: hidden; */
-  margin: 5px auto 5px;
-  padding: 1px 50px;
-  width: 87%;
-  align-items: center;
+  width: 80%;
+  max-width: 1200px;
+  height: 80px;
+  top: 3%;
+  left: 10%;
+  padding: 0.1rem 1rem;
   justify-content: space-between;
-  z-index: 10000;
+  align-items: center;
   background:#ffd0f0d7;
   transition: 0.5s linear;
-  border-radius: 0.5rem;
+  z-index: 10000;
    
 }
 
@@ -73,75 +79,61 @@ header {
   align-items: center;
   font-family: 'Italiana', serif;
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: bold;
   color: var(--color-txt-claro);
   text-decoration: none;
-  column-gap: 0.2rem;
 }
+
 
 .logo img{
-  width: 70px;
-  height: 70px;
+  left: 1rem;
+  width: 5rem;
+  height: 5rem;
 }
 
-.menu {
+header .menu {
   display: flex;
-  position: absolute;
-  column-gap: 2.4rem;
-  margin: 25%;
+  align-items: center;
+  column-gap: 2rem;
+  
 }
 
 .menu a {
-  position: relative;
-  padding: 10px;
+  padding: 0.6rem;
   font-size: 1rem;
   font-weight: 500;
   color: var(--color-texto-claro);
   text-decoration: none;
   transition: 0.3s;
-  border-radius: 3px;
-  
+    
 }
 
 .menu a:hover{
-  /*font-size: 1.1rem;*/
-  /*letter-spacing: 1px;*/
   color: var(--color-txt-oscuro);
   background-color:#e9ac5c;
   transition: 0.3s;
 }
 
 .menu-iconos{
-  position: absolute;
   right: 1rem;
-  font-size: 25px;
+  font-size: 1.4rem;
   cursor: pointer;
   z-index: 100000;
   transition: var(--transicion);
 }
-#buscar-icono:hover, #usuario-icono:hover, #carrito-icono:hover{
+
+.menu-iconos i:hover{
   color: #fff;
   background: #e9ac5c;
   transition: var(--transicion);
 }
 .iconos{
-  padding: 10px;
+  padding: 0.6rem;
   border-radius: 3px;
 }
 
 #menu-icono{
   display: none;
-}
-.contenedor{
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  margin: 5px auto; 
-  /* height: 350px; */
-  width: 87%;
-  z-index: 1100;
-  background: #b1f6df;
-  border: #02171d solid 1px;
 }
 
 .cuadro-busqueda{
@@ -149,9 +141,8 @@ header {
   position: absolute;
   top: -100px;
   right: 0.5px;;
-  padding: 15px 20px;
+  padding: 1.2rem 1.5rem;
   background: var(--color-fondo-claro);
-  border-radius: 0.5rem;
   box-shadow: var(--sombra-oscura);
   transition:var(--transicion-suave);
   z-index: 1000;
@@ -159,7 +150,7 @@ header {
 
 .cuadro-busqueda.activo{
   display: flex;
-  top: 80px;
+  top: 85px;
   transition:var(--transicion-suave);
 }
 
@@ -173,7 +164,6 @@ header {
   align-items: center;
   row-gap: 0.5rem;
   background: var(--color-fondo-claro);
-  border-radius: 0.5rem;
   box-shadow: var(--sombra-oscura);
   transition:var(--transicion-suave);
   z-index: 1000;
@@ -182,7 +172,7 @@ header {
 
 .carrito-vista.activo{
   display: flex;
-  top: 80px;
+  top: 85px;
   transition:var(--transicion-suave);
   z-index: 1000;
 }
@@ -197,7 +187,6 @@ header {
   row-gap: 0.5rem;
   background: var(--color-fondo-claro);
   padding: 20px;
-  border-radius: 0.5rem;
   box-shadow: var(--sombra-oscura);
   transition: var(--transicion-suave);
   z-index: 1000;
@@ -205,7 +194,7 @@ header {
 
 .ingreso.activo{
   display: flex;
-  top: 80px;
+  top: 85px;
   transition: var(--transicion-suave)
 }
 
@@ -214,7 +203,7 @@ padding: 10px;
 border: none;
 width: 280px;
 outline: none;
-border-radius: 0.5rem;
+
 }
 
 .carrito-vista a{
@@ -231,15 +220,14 @@ border-radius: 0.5rem;
   column-gap: 2rem;
 }
 
-.carrito-vista .cuadro .texto h3{
+.carrito-vista h3{
   font-size: 1rem;
 }
 
-.carrito-vista .cuadro .bx{
-  font-size: 24px;
+.carrito-vista i{
+  font-size: 1.8rem;
   padding: 5px;
   cursor: pointer;
-  border-radius: 3px;
 }
 
 .carrito-vista .cuadro .bx:hover{
@@ -264,7 +252,7 @@ border-radius: 0.5rem;
   outline: none;
   background: var(--fondo-suave);
   border: none;
-  border-radius: 0.5rem;
+  
 }
 
 .ingreso .btn {
@@ -291,7 +279,7 @@ border-radius: 0.5rem;
 }
 
 .carrusel{
-  width: 70%;
+  width: 87%;
   margin: 10px auto;
   max-width: 120rem;
   height: 50vh;
@@ -358,7 +346,7 @@ border-radius: 0.5rem;
   letter-spacing: 3px;
   text-transform: uppercase;
   align-content: center;
-  border-radius: 3px;
+  border-radius: 0.5rem;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -370,8 +358,46 @@ border-radius: 0.5rem;
   transition: 0.2s;
 }
 
-.btn:activo{
+.menu-iconos i:active{
   color:#d000eb;
   background: wheat;
   transition: 0.2s;
+}
+
+.btn:active{
+  color:#d000eb;
+  background: wheat;
+  transition: 0.2s;
+}
+
+
+/* --------- consulta de medios-------------*/
+
+@media (max-width: 952px){
+  html{
+    font-size: 14px;
+  }
+
+  .logo{
+    font-size: 1.2rem;
+  }
+  
+  .menu a{
+    padding: 3px;
+    margin: 1px;
+  }
+
+  .menu-iconos{
+    font-size: 18px;
+  }
+  
+}
+
+@media (max-width: 413px){
+  #menu-icono{
+    display: flex;
+  }
+
+
+  
 }
